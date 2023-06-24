@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ular Tangga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="cursor"></div>
+        <button type="submit" class="playButton">PLAY!</button>
+        <button type="reset" class="resetButton">RESET!</button>
+        <div class="welcome">
+            <h1>ULAR TANGGA</h1>
+        </div>
+        <div class="dadu">
+            <img src="img/whitePawn.png" class="img-Pawn" id="whitePawn">
+            <img src="img/redPawn.png" class="img-Pawn" id="redPawn">
+            <img src="img/yellowPawn.png" class="img-Pawn" id="yellowPawn">
+            <img src="img/greenPawn.png" class="img-Pawn" id="greenPawn">
+            <img src="img/bluePawn.png" class="img-Pawn" id="bluePawn">
+            <img src="img/blackPawn.png" class="img-Pawn" id="blackPawn">
+        </div>
+        <div class="ladder">
+            <img src="img/ladder1.png" id="ladder81-99" >
+            <img src="img/ladder1.png" id="ladder71-92" >
+            <img src="img/ladder1.png" id="ladder21-42" >
+            <img src="img/ladder1.png" id="ladder4-14" >
+            <img src="img/ladder1.png" id="ladder8-30" >
+            <img src="img/ladder1.png" id="ladder28-76" >
+            <img src="img/ladder1.png" id="ladder50-67" >
+        </div>
+        <div class="snake">
+            <img src="img/snake2-right.png" id="snake97-78">
+            <img src="img/snake2-left.png" id="snake32-10">
+            <img src="img/snake2-right.png"  id="snake48-26">
+            <img src="img/snake2-left.png" alt="" id="snake36-6">
+            <img src="img/snake2-left.png" alt="" id="snake62-17">
+            <img src="img/snake2-right.png" alt="" id="snake88-24">
+            <img src="img/snake2-right.png" alt="" id="snake95-44">
+        </div>
+        <div class="playerDisplay">
+            <!-- <h1>YOU : 12</h1>
+            <h1>COMP : </h1> -->
+        </div>
+
+        <div class="info1">
+            <img src="img/baki.png" class="img-Baki">
+        </div><div class="papan">
+            <div class="main-container">
+                <div class="file-a files">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="file-b files">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="file-c files">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="file-d files">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="file-e files">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="file-f files">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="file-g files">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="file-h files">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="file-i files">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="file-j files">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+            </div>
+        </div><div class="info2">
+        <img src="img/1.png" class="img-Dadu">
+        </div>
+        <div class="rules">
+            <h1>Tutorial Bermain:</h1>
+            <ol type="1">
+                <li>Pilih Pawn yang ingin kamu mainkan</li>
+                <li>Nanti akan ada keterangan warna pawnmu dan warna pawn computer</li>
+                <li>Sementara main sendiri dulu yaa!, bikin computernya susaaaahh!!</li>
+            </ol>
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+    <script src="layoutStyle.js"></script>
+</body>
+</html>
