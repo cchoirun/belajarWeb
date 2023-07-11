@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --primary-color: rgb(17, 12, 21);
+    --secondary-color: rgb(234, 190, 255);
+}
+
+body {
+    font-family:  sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(27, 25, 25);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: var(--secondary-color);
+    height: 50px;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Pacifico', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: rgb(251, 244, 255);
+
+}
+
+/* Hamburger menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -8px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Membuat animasi hamburger menu */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin:0 0 ;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin:0 100% ;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+
+/* Responsive Breakpoint */
+
+/* Ukuran tablet */
+@media  screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* Ukuran mobile */
+@media  screen and (max-width: 576px) {
+    .menu-toggle  {
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 80%;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
