@@ -1,7 +1,11 @@
+<h1>Preview Website</h1>
+
+<h2>Full Display : </h2>
+
+<img src="img/1.png" style="width: 50%">
+
+<h2>Mobile display :</h2>
+<img src="img/2.png" style="width:30%">
+<img src="img/3.png" style="width:30%">
 
 
-![Gambar 1. Full display](img/1.png)
-
-![Gambar 2. Mobile display](img/2.png)
-
-![Gambar 3. Mobile display](img/3.png)
