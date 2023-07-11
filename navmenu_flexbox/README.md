@@ -1,4 +1,4 @@
-<img src="img/1.png" style="width = 50%">
+<img src="img/1.png" style="width: 50%">
 
 ![Gambar 2. Mobile display](img/2.png)
 
